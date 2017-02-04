@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+	
+	float somma, moltiplicazione, divisione, sottrazione;
+	float n,m;
+	string operazione;
+	
+	cout<<"che operazione vuole fare?"<<endl;
+	cin>>operazione;
+	if(operazione=="somma"){
+		cout<<"inserisci i numeri e poi inserisci 0 per fare somma"<<endl;
+		somma=0;
+		cin>>n;
+		while (n!=0){
+			cin>>n;
+			somma=somma+n;
+		}
+		cout<<"la somma e' "<<somma<<endl;
+	}
+	else{
+		if(operazione=="moltiplicazione"){
+			cout<<"inserisci i numeri e poi digita 1 per fare la moltiplicazione"<<endl;
+			moltiplicazione=1;
+			while (m!=1){
+				cin>>m;
+				moltiplicazione=moltiplicazione*m;
+			}
+			cout<<"il risultato e' "<<moltiplicazione<<endl;
+		}
+	}
+	
+	
+	return 0;
+}
